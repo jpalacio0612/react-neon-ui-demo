@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import { ButtonDemo } from './components/ButtonDemo'
 import { GettingStarted } from './components/GettingStarted'
+import { TextInputDemo } from './components/TextInputDemo'
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path='/' />
+          <Route exact path='/' component={GettingStarted} />
           <Route exact path='/button' component={ButtonDemo} />
           <Route exact path='/gettingstarted' component={GettingStarted} />
+          <Route exact path='/textinput' component={TextInputDemo} />
           <Route />
         </Switch>
       </Router>

@@ -1,14 +1,10 @@
 import React, { useState } from 'react'
 import { Header } from '../Header'
-import { Table } from '../Table'
+
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 
 export const GettingStarted = () => {
-  const [tag, setTag] = useState('general')
-
-  const changeTag = (e) => setTag(e)
-
   return (
     <div>
       <Header title='Getting Started' hideTags />
