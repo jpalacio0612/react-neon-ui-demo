@@ -6,6 +6,7 @@ import { ButtonDemo } from './components/ButtonDemo'
 import { GettingStarted } from './components/GettingStarted'
 import { TextInputDemo } from './components/TextInputDemo'
 import { NumberInputDemo } from './components/NumberInputDemo'
+import { SelectDemo } from './components/SelectDemo'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/gettingstarted' component={GettingStarted} />
           <Route exact path='/textinput' component={TextInputDemo} />
           <Route exact path='/numberinput' component={NumberInputDemo} />
+          <Route exact path='/select' component={SelectDemo} />
           <Route />
         </Switch>
       </Router>
