@@ -1,4 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import './components/Navbar/styles.scss';
+
+html,
 body {
   margin: 0;
-  background-color: red;
+  padding: 0;
+  height: 100%;
+  background-color: #04001a;
+  box-sizing: border-box;
+  font-family: 'Lobster', cursive;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 15% 85%;
 }

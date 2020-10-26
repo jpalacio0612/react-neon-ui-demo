@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import { Hello } from './components/Hello'
+import App from './app'
 import './app.scss'
 
-ReactDom.render(<Hello />, document.getElementById('app'))
+ReactDom.render(<App />, document.getElementById('app'))
