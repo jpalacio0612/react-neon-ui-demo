@@ -9,25 +9,29 @@ import { NumberInputDemo } from './components/NumberInputDemo'
 import { SelectDemo } from './components/SelectDemo'
 import { AutocompleteDemo } from './components/AutocompleteDemo'
 import { Theming } from './components/Theming'
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
 
 function App() {
   return (
-    <div className='app'>
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path='/' component={GettingStarted} />
-          <Route exact path='/button' component={ButtonDemo} />
-          <Route exact path='/gettingstarted' component={GettingStarted} />
-          <Route exact path='/textinput' component={TextInputDemo} />
-          <Route exact path='/numberinput' component={NumberInputDemo} />
-          <Route exact path='/select' component={SelectDemo} />
-          <Route exact path='/autocomplete' component={AutocompleteDemo} />
-          <Route exact path='/theming' component={Theming} />
-          <Route />
-        </Switch>
-      </Router>
-    </div>
+    <Provider store={store}>
+      <div className='app'>
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route exact path='/' component={GettingStarted} />
+            <Route exact path='/button' component={ButtonDemo} />
+            <Route exact path='/gettingstarted' component={GettingStarted} />
+            <Route exact path='/textinput' component={TextInputDemo} />
+            <Route exact path='/numberinput' component={NumberInputDemo} />
+            <Route exact path='/select' component={SelectDemo} />
+            <Route exact path='/autocomplete' component={AutocompleteDemo} />
+            <Route exact path='/theming' component={Theming} />
+            <Route />
+          </Switch>
+        </Router>
+      </div>
+    </Provider>
   )
 }
 
