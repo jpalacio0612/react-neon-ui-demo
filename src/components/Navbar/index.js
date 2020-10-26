@@ -7,7 +7,7 @@ export const Navbar = () => {
       <ul className='navbar__list'>
         <h2>Rect Neon UI</h2>
         <li>
-          <Link to='/started'>Getting Started</Link>
+          <Link to='/gettingstarted'>Getting Started</Link>
         </li>
         <li>
           <Link to='/button'>Button</Link>

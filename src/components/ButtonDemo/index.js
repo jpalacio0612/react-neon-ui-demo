@@ -14,15 +14,15 @@ export const ButtonDemo = () => {
   const dataTable = [
     {
       title: 'variant',
-      type: 'string',
+      type: '"primary", "secondary',
       default: 'primary',
-      Description: 'primary, secondary'
+      Description: 'Choose a variant'
     },
     {
       title: 'size',
-      type: 'string',
+      type: '"small, medium, large',
       default: 'medium',
-      Description: `'small','medium','large'`
+      Description: `Choose the size`
     },
     {
       title: 'onClick',
@@ -44,7 +44,7 @@ export const ButtonDemo = () => {
       {tag === 'general' && (
         <Table
           title='Button'
-          description='Buttons communicate the action that will occur when the user touches them.'
+          description='Represent a clickable button element that triggers an event'
           data={dataTable}
         />
       )}
