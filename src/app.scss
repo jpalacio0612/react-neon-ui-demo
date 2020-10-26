@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import './components/Navbar/styles.scss';
+@import './components/Header/styles.scss';
+@import './components/Table/style.scss';
 
 html,
 body {
@@ -22,4 +24,12 @@ h5 {
 .app {
   display: grid;
   grid-template-columns: 15% 85%;
+}
+
+.usecases {
+  padding: 50px;
+  h1 {
+    color: #ff124f;
+    margin-bottom: 20px;
+  }
 }
