@@ -25,7 +25,7 @@ export const Navbar = () => {
           <Link to='/autocomplete'>Autocomplete</Link>
         </li>
         <li>
-          <Link to='/theme'>Theming</Link>
+          <Link to='/theming'>Theming</Link>
         </li>
       </ul>
     </div>

@@ -8,6 +8,7 @@ import { TextInputDemo } from './components/TextInputDemo'
 import { NumberInputDemo } from './components/NumberInputDemo'
 import { SelectDemo } from './components/SelectDemo'
 import { AutocompleteDemo } from './components/AutocompleteDemo'
+import { Theming } from './components/Theming'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path='/numberinput' component={NumberInputDemo} />
           <Route exact path='/select' component={SelectDemo} />
           <Route exact path='/autocomplete' component={AutocompleteDemo} />
+          <Route exact path='/theming' component={Theming} />
           <Route />
         </Switch>
       </Router>
