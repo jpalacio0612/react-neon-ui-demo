@@ -12,11 +12,11 @@ export const GettingStarted = () => {
         <h1> How to install </h1>
         <p>For npm users</p>
         <SyntaxHighlighter language='jsx' style={monokai}>
-          {`$ npm install react-neon-ui styled-components`}
+          {`$ npm install react-neon-ui styled-components numeral`}
         </SyntaxHighlighter>
         <p>For yarn users</p>
         <SyntaxHighlighter language='jsx' style={monokai}>
-          {`$ yarn add react-neon-ui styled-components`}
+          {`$ yarn add react-neon-ui styled-components numeral`}
         </SyntaxHighlighter>
         <h1> Example </h1>
         <SyntaxHighlighter language='jsx' style={monokai}>

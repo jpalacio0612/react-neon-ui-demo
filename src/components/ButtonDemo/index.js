@@ -14,13 +14,13 @@ export const ButtonDemo = () => {
   const dataTable = [
     {
       title: 'variant',
-      type: '"primary", "secondary',
+      type: '"primary", "secondary"',
       default: 'primary',
       Description: 'Choose a variant'
     },
     {
       title: 'size',
-      type: '"small, medium, large',
+      type: '"small", "medium", "large"',
       default: 'medium',
       Description: `Choose the size`
     },

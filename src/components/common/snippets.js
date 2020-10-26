@@ -203,16 +203,20 @@ export const SelectSnippets = {
 export const AutocompleteSnippets = {
   variants: `
   import { Select } from 'react-neon-ui'
+
+  const colors = ['blue','red','yellow','green','black','white]
   
-  <Autocomplete variant='primary' suggestions={suggestions} />
-  <Autocomplete variant='secondary' suggestions={suggestions} />
+  <Autocomplete variant='primary' suggestions={colors} />
+  <Autocomplete variant='secondary' suggestions={colors} />
   `,
   sizes: `
   import { Select } from 'react-neon-ui'
 
-  <Autocomplete size='small' suggestions={suggestions} />
-  <Autocomplete size='medium' suggestions={suggestions} />
-  <Autocomplete size='large' suggestions={suggestions} />
+  const colors = ['blue','red','yellow','green','black','white]
+
+  <Autocomplete size='small' suggestions={colors} />
+  <Autocomplete size='medium' suggestions={colors} />
+  <Autocomplete size='large' suggestions={colors} />
   `
 }
 
