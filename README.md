@@ -1,63 +1,11 @@
-## Install
+## Demo-documentation for react-neon-ui component library.
 
-For npm users:
+In this demo you will find examples of the different components that the library brings.
 
-```shell
-  $ npm install react-neon-ui styled-components
-```
+This demo is built in React and React-Redux.
 
-For Yarn users:
+# Links
 
-```shell
-  $ yarn add react-neon-ui styled-components
-```
+[Documentation click here](https://react-neon-ui-demo.vercel.app/)
 
-## Example
-
-```jsx
-import React from 'react'
-import { Buttom } from 'react-neon-ui'
-
-const App = () => (
-  <div>
-    <Button>Click Here</Button>
-  </div>
-)
-
-export default App
-```
-
-## Theme Support
-
-We have two default themes "neon" and "cyberpunk" but you can use your custom theme through an javascript object
-
-```jsx
-import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { Buttom } from 'react-neon-ui'
-import { cyberpunk } from 'react-neon-ui'
-
-const App = () => (
-  <div>
-    <ThemeProvider theme={cyberpunk}>
-      <Button>Click Here</Button>
-    </ThemeProvider>
-  </div>
-)
-
-export default App
-```
-
-## Explore with storybook
-
-You can clone the repository and use the storybook to see examples of each component, modify the repository, and bring in new ideas.
-
-```shell
-  $ npm run storybook
-```
-
-or
-
-```shell
-  $ yarn storybook
-```
+[Github Repository react-neon-ui](https://github.com/jpalacio0612/react-neon-ui)
