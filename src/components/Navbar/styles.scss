@@ -1,7 +1,11 @@
 .navbar {
-  min-width: 200px;
   background-color: #0f0b2b;
   height: 100vh;
+  @media screen and (max-width: 766px) {
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .navbar__list {
@@ -25,6 +29,13 @@
         color: #ff124f;
         border-bottom: 1px solid #ff124f;
       }
+    }
+    @media screen and (max-width: 1023px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 766px) {
+      font-size: 20px;
+      text-align: center;
     }
   }
 }

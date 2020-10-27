@@ -24,6 +24,12 @@ h5 {
 .app {
   display: grid;
   grid-template-columns: 15% 85%;
+  @media screen and (max-width: 1023px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 766px) {
+    grid-template-columns: 100%;
+  }
 }
 
 .usecases {
