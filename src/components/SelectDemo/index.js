@@ -63,54 +63,48 @@ export const SelectDemo = () => {
       {tag === 'useCases' && (
         <div className='usecases'>
           <h1>Variants</h1>
-          <Select
-            style={{ margin: '0 10px' }}
-            label='Select variant'
-            options={['primary', 'secondary']}
-          />
-          <Select
-            style={{ margin: '0 10px' }}
-            variant='secondary'
-            label='Select variant'
-            options={['primary', 'secondary']}
-          />
+          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <Select label='Select variant' options={['primary', 'secondary']} />
+
+            <Select
+              variant='secondary'
+              label='Select variant'
+              options={['primary', 'secondary']}
+            />
+          </div>
           <SyntaxHighlighter language='jsx' style={monokai}>
             {SelectSnippets.variants}
           </SyntaxHighlighter>
           <h1>Sizes</h1>
-          <Select
-            style={{ margin: '0 10px' }}
-            size='small'
-            label='small'
-            options={['small', 'medium', 'large']}
-          />
-          <Select
-            style={{ margin: '0 10px' }}
-            size='medium'
-            label='medium'
-            options={['small', 'medium', 'large']}
-          />
-          <Select
-            style={{ margin: '0 10px' }}
-            size='large'
-            label='large'
-            options={['small', 'medium', 'large']}
-          />
+          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <Select
+              size='small'
+              label='small'
+              options={['small', 'medium', 'large']}
+            />
+            <Select
+              size='medium'
+              label='medium'
+              options={['small', 'medium', 'large']}
+            />
+            <Select
+              size='large'
+              label='large'
+              options={['small', 'medium', 'large']}
+            />
+          </div>
           <SyntaxHighlighter language='jsx' style={monokai}>
             {SelectSnippets.sizes}
           </SyntaxHighlighter>
           <h1>MultiSelect</h1>
-          <Select
-            style={{ margin: '0 10px' }}
-            label='Multi Select'
-            options={['primary', 'secondary']}
-            multiple
-          />
-          <Select
-            style={{ margin: '0 10px' }}
-            label='Single Select'
-            options={['primary', 'secondary']}
-          />
+          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <Select
+              label='Multi Select'
+              options={['primary', 'secondary']}
+              multiple
+            />
+            <Select label='Single Select' options={['primary', 'secondary']} />
+          </div>
           <SyntaxHighlighter language='jsx' style={monokai}>
             {SelectSnippets.multiselect}
           </SyntaxHighlighter>
