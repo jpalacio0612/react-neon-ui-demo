@@ -7,7 +7,7 @@ import { Table } from '../Table'
 import { ButtonSnippets } from '../common/snippets'
 
 export const ButtonDemo = () => {
-  const [tag, setTag] = useState('general')
+  const [tag, setTag] = useState('useCases')
 
   const changeTag = (e) => setTag(e)
 

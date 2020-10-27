@@ -9,12 +9,13 @@ import { NumberInputDemo } from './components/NumberInputDemo'
 import { SelectDemo } from './components/SelectDemo'
 import { AutocompleteDemo } from './components/AutocompleteDemo'
 import { Theming } from './components/Theming'
-import { Provider } from 'react-redux'
-import { store } from './redux/store'
+import { useSelector } from 'react-redux'
+import { ThemeProvider } from 'styled-components'
 
 function App() {
+  const theme = useSelector((state) => state)
   return (
-    <Provider store={store}>
+    <ThemeProvider theme={theme}>
       <div className='app'>
         <Router>
           <Navbar />
@@ -31,7 +32,7 @@ function App() {
           </Switch>
         </Router>
       </div>
-    </Provider>
+    </ThemeProvider>
   )
 }
 

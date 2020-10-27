@@ -8,7 +8,7 @@ import { top100Films } from '../common/mockdata'
 import { AutocompleteSnippets } from '../common/snippets'
 
 export const AutocompleteDemo = () => {
-  const [tag, setTag] = useState('general')
+  const [tag, setTag] = useState('useCases')
 
   const changeTag = (e) => setTag(e)
 

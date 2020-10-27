@@ -7,7 +7,7 @@ import { Table } from '../Table'
 import { NumberInputSnippets } from '../common/snippets'
 
 export const NumberInputDemo = () => {
-  const [tag, setTag] = useState('general')
+  const [tag, setTag] = useState('useCases')
 
   const changeTag = (e) => setTag(e)
 

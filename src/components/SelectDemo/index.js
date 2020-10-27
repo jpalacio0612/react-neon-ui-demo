@@ -7,7 +7,7 @@ import { Table } from '../Table'
 import { SelectSnippets } from '../common/snippets'
 
 export const SelectDemo = () => {
-  const [tag, setTag] = useState('general')
+  const [tag, setTag] = useState('useCases')
 
   const changeTag = (e) => setTag(e)
 

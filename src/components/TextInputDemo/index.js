@@ -7,7 +7,7 @@ import { Table } from '../Table'
 import { TextInput } from 'react-neon-ui'
 
 export const TextInputDemo = () => {
-  const [tag, setTag] = useState('general')
+  const [tag, setTag] = useState('useCases')
 
   const changeTag = (e) => setTag(e)
 
