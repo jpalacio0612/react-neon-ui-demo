@@ -37,9 +37,9 @@ export const Navbar = () => {
           <Link to='/theming'>Theming</Link>
         </li>
       </ul>
-      <div onClick={toggleNavbar} className='navbar-toggle'>
-        <GiHamburgerMenu />
-      </div>
+      <button onClick={toggleNavbar} className='navbar-toggle'>
+        <GiHamburgerMenu size={25} />
+      </button>
     </div>
   )
 }
