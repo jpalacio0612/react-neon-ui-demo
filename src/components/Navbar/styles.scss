@@ -9,11 +9,18 @@
 }
 .navbar-toggle {
   color: aliceblue;
-  padding: 2em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1em;
   top: 0;
-  left: 0px;
+  left: 0;
   position: absolute;
   display: fixed;
+  transition: 0.5s;
+  &:hover {
+    background: #04001a;
+  }
 }
 .navbar__list {
   flex-direction: column;
@@ -21,13 +28,11 @@
   position: absolute;
   top: 5%;
   left: 0;
-  padding: 1rem 0 0 2rem;
-  display: flex;
-  width: 30vw;
+  padding: 1rem 2rem 0 1.5rem;
+  width: min-content;
   height: 100vh;
   background-color: #0f0b2b;
-  z-index: 10;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   h2 {
     color: #ff124f;
   }
