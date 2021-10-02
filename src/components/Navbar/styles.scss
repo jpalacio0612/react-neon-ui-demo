@@ -7,11 +7,27 @@
     justify-content: center;
   }
 }
-
+.navbar-toggle {
+  color: aliceblue;
+  padding: 2em;
+  top: 0;
+  left: 0px;
+  position: absolute;
+  display: fixed;
+}
 .navbar__list {
-  margin: 0 10px 0 10px;
-  padding: 20px;
+  flex-direction: column;
   color: white;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  padding: 1rem 0 0 2rem;
+  display: flex;
+  width: 30vw;
+  height: 100vh;
+  background-color: #0f0b2b;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
   h2 {
     color: #ff124f;
   }
