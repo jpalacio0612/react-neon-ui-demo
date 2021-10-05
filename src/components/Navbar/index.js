@@ -1,20 +1,26 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 
 export const Navbar = () => {
+  const navbarRef = useRef(null)
   const [navBar, setNavBar] = useState(false)
 
   const toggleNavbar = () => {
     setNavBar(!navBar)
   }
+
+  const closeNavbar = () => setNavBar(false)
+
+  useOnClickOutside(navbarRef, navBar, closeNavbar)
+
   return (
     <div className='navbar'>
       <ul
-        className='navbar__list'
-        style={navBar ? { display: 'flex' } : { display: 'none' }}
+        className={navBar ? 'navbar__list active' : 'navbar__list'}
+        ref={navbarRef}
       >
-        <h2>React Neon UI</h2>
         <li>
           <Link to='/gettingstarted'>Getting Started</Link>
         </li>

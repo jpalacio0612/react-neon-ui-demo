@@ -1,32 +1,33 @@
 .navbar {
   background-color: #0f0b2b;
   height: 100vh;
-  @media screen and (max-width: 766px) {
-    height: auto;
-    display: flex;
-    justify-content: center;
-  }
+  width: auto;
 }
+
 .navbar-toggle {
+  cursor: pointer;
   color: aliceblue;
-  padding: 2em;
-  top: 0;
-  left: 0px;
+  background-color: transparent;
+  border: none;
+  padding: 1em;
+  top: 15px;
+  left: 10px;
   position: absolute;
   display: fixed;
+  @media screen and (min-width: 766px) {
+    display: none;
+  }
 }
+
 .navbar__list {
+  display: flex;
   flex-direction: column;
-  color: white;
-  position: absolute;
-  top: 5%;
-  left: 0;
-  padding: 1rem 2rem 0 1.5rem;
-  width: max-content;
   height: 100vh;
+  padding: 40px;
+  position: static;
+  color: white;
   background-color: #0f0b2b;
-  z-index: 10;
-  transition: transform 0.3s ease-in-out;
+  transition: 850ms;
   h2 {
     color: #ff124f;
   }
@@ -38,6 +39,7 @@
     font-size: 20px;
     transition: 500ms;
     a {
+      padding: 0;
       color: white;
       text-decoration: none;
       &:hover {
@@ -45,12 +47,18 @@
         border-bottom: 1px solid #ff124f;
       }
     }
-    @media screen and (max-width: 1023px) {
-      font-size: 14px;
-    }
-    @media screen and (max-width: 766px) {
-      font-size: 20px;
-      text-align: center;
-    }
   }
+  @media screen and (max-width: 766px) {
+    position: absolute;
+    z-index: 10;
+    left: -100%;
+  }
+  @media screen and (max-width: 1023px) {
+    font-size: 14px;
+  }
+}
+
+.navbar__list.active {
+  left: 0;
+  transition: 350ms;
 }
