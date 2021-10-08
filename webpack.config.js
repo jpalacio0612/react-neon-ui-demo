@@ -15,6 +15,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(jpg|png)$/,
+        use: {
+          loader: 'url-loader'
+        }
+      },
+
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
@@ -42,8 +49,8 @@ module.exports = {
     ]
   },
   devServer: {
-    historyApiFallback: true,
-   },
+    historyApiFallback: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',

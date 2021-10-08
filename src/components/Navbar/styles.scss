@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 40px;
+  padding: 20px 40px 40px 40px;
   position: static;
   color: white;
   background-color: #0f0b2b;
@@ -61,4 +61,15 @@
 .navbar__list.active {
   left: 0;
   transition: 350ms;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  padding-top: 25px;
+  align-self: center;
+  padding-left: 15px;
+  @media screen and (max-width: 765px) {
+    display: none;
+  }
 }
