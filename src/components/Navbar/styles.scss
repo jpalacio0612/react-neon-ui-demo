@@ -1,4 +1,7 @@
 .navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #0f0b2b;
   height: 100vh;
   width: auto;
@@ -22,7 +25,6 @@
 .navbar__list {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   padding: 20px 40px 40px 40px;
   position: static;
   color: white;
@@ -52,6 +54,7 @@
     position: absolute;
     z-index: 10;
     left: -100%;
+    height: 100%;
   }
   @media screen and (max-width: 1023px) {
     font-size: 14px;
@@ -64,11 +67,9 @@
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
-  padding-top: 25px;
-  align-self: center;
-  padding-left: 15px;
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
   @media screen and (max-width: 765px) {
     display: none;
   }
