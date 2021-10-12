@@ -7,6 +7,11 @@
   src: url(../public/Fonts/Inter-Regular.ttf);
 }
 
+@font-face {
+  font-family: Courgette;
+  src: url(../public/Fonts/Courgette-Regular.ttf);
+}
+
 html,
 body {
   margin: 0;
@@ -14,7 +19,7 @@ body {
   height: 100%;
   background-color: #04001a;
   box-sizing: border-box;
-  font-family: 'Inter', cursive;
+  font-family: 'Courgette', cursive;
 }
 h1,
 h2,
