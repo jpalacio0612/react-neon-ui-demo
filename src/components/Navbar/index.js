@@ -1,11 +1,20 @@
-import React, { useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useRef, useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 import logo from '../../assets/logo.png'
 
+const routes = [
+  { url: '/gettingstarted', name: 'Getting Started' },
+  { url: '/button', name: 'Button' },
+  { url: '/textinput', name: 'TextInput' },
+  { url: '/numberinput', name: 'NumberInput' },
+  { url: '/autocomplete', name: 'Autocomplete' },
+  { url: '/theming', name: 'Theming' }
+]
 export const Navbar = () => {
   const navbarRef = useRef(null)
+  const location = useLocation()
   const [navBar, setNavBar] = useState(false)
 
   const toggleNavbar = () => {
@@ -16,6 +25,14 @@ export const Navbar = () => {
 
   useOnClickOutside(navbarRef, navBar, closeNavbar)
 
+  const currentlyActiveTab = (url) => {
+    return url === location.pathname
+  }
+
+  useEffect(() => {
+    closeNavbar()
+  }, [location.pathname])
+
   return (
     <div className='navbar'>
       <img className='logo' src={logo} />
@@ -23,27 +40,18 @@ export const Navbar = () => {
         className={navBar ? 'navbar__list active' : 'navbar__list'}
         ref={navbarRef}
       >
-        <li>
-          <Link to='/gettingstarted'>Getting Started</Link>
-        </li>
-        <li>
-          <Link to='/button'>Button</Link>
-        </li>
-        <li>
-          <Link to='/textinput'>TextInput</Link>
-        </li>
-        <li>
-          <Link to='/numberinput'>NumberInput</Link>
-        </li>
-        <li>
-          <Link to='/select'>Select</Link>
-        </li>
-        <li>
-          <Link to='/autocomplete'>Autocomplete</Link>
-        </li>
-        <li>
-          <Link to='/theming'>Theming</Link>
-        </li>
+        {routes.map((route) => {
+          return (
+            <li key={route.url}>
+              <Link
+                to={route.url}
+                className={currentlyActiveTab(route.url) && 'active'}
+              >
+                {route.name}
+              </Link>
+            </li>
+          )
+        })}
       </ul>
       <button onClick={toggleNavbar} className='navbar-toggle'>
         <GiHamburgerMenu className='navbar-toggle-button' size={25} />
