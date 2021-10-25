@@ -22,7 +22,7 @@ export const Theming = () => {
         <SyntaxHighlighter language='jsx' style={monokai}>
           {ThemeSnippets.changeTheme}
         </SyntaxHighlighter>
-        <h1>How to make an custom theme</h1>
+        <h1>How to make a custom theme</h1>
         <p>
           To make a custom theme you must pass a javascript object to the
           themeprovider based on the template below, modifying the colors or
