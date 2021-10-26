@@ -289,5 +289,23 @@ export const DividerSnippets = {
 
   <Divider variant='primary'/>
   <Divider variant='secondary'/>
+  `,
+  orientations: `
+  import { Divider } from 'react-neon-ui'
+
+  <Divider orientation='horizontal'/>
+  <Divider orientation='vertical'/>
+  `,
+  thick: `
+  import { Divider } from 'react-neon-ui'
+
+  <Divider thick='2'/>
+  <Divider thick='4'/>
+  `,
+  disabled: `
+  import { Divider } from 'react-neon-ui'
+
+  <Divider />
+  <Divider disabled />
   `
 }
