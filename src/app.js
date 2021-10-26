@@ -16,6 +16,7 @@ import { AutocompleteDemo } from './components/AutocompleteDemo'
 import { Theming } from './components/Theming'
 import { useSelector } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
+import { DividerDemo } from './components/DividerDemo'
 
 function App() {
   const theme = useSelector((state) => state)
@@ -37,6 +38,7 @@ function App() {
               <Route exact path='/select' component={SelectDemo} />
               <Route exact path='/autocomplete' component={AutocompleteDemo} />
               <Route exact path='/theming' component={Theming} />
+              <Route exact path='/divider' component={DividerDemo} />
               <Route />
             </Switch>
           </div>

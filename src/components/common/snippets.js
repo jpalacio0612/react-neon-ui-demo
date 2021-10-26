@@ -63,25 +63,25 @@ export const NumberInputSnippets = {
   import React, { useRef, useState } from "react";
   import "./App.css";
   import { NumberInput } from "react-neon-ui";
-  
-  
+
+
   function App() {
     const inputRef = useRef(null);
-  
+
     const handleRef = () => {
       alert(inputRef.current.value);
     };
-  
+
     return (
       <div className="App">
         <Button onClick={handleRef}>Show Ref</Button>
         <NumberInput
-          ref={inputRef}       
+          ref={inputRef}
         />
       </div>
     );
   }
-  
+
   export default App;
   `
 }
@@ -128,25 +128,25 @@ export const TextInputSnippets = {
   import React, { useRef, useState } from "react";
   import "./App.css";
   import { TextInput } from "react-neon-ui";
-  
-  
+
+
   function App() {
     const inputRef = useRef(null);
-  
+
     const handleRef = () => {
       alert(inputRef.current.value);
     };
-  
+
     return (
       <div className="App">
         <Button onClick={handleRef}>Show Ref</Button>
         <TextInput
-          ref={inputRef}       
+          ref={inputRef}
         />
       </div>
     );
   }
-  
+
   export default App;
   `
 }
@@ -168,7 +168,7 @@ export const SelectSnippets = {
   `,
   sizes: `
   import { Select } from 'react-neon-ui'
-  
+
   <Select
     size='small'
     label='small'
@@ -187,7 +187,7 @@ export const SelectSnippets = {
   `,
   multiselect: `
   import { Select } from 'react-neon-ui'
-  
+
   <Select
     label='Multi Select'
     options={['primary', 'secondary']}
@@ -205,7 +205,7 @@ export const AutocompleteSnippets = {
   import { Select } from 'react-neon-ui'
 
   const colors = ['blue','red','yellow','green','black','white]
-  
+
   <Autocomplete variant='primary' suggestions={colors} />
   <Autocomplete variant='secondary' suggestions={colors} />
   `,
@@ -227,10 +227,10 @@ export const ThemeSnippets = {
   import { ThemeProvider } from 'styled-components';
   import { cyberpunk } from 'react-neon-ui';
   import { neon } from 'react-neon-ui';
-  
-  
+
+
   ReactDOM.render(
-      <ThemeProvider theme={cyberpunk}> 
+      <ThemeProvider theme={cyberpunk}>
         ...your app content
       </ThemeProvider>,
     document.getElementById('root'),
@@ -265,7 +265,7 @@ export const ThemeSnippets = {
     fontFamily: {
       name: 'monoton'
     }
-  }  
+  }
   `,
   customTheme: `
   import React from 'react';
@@ -275,10 +275,19 @@ export const ThemeSnippets = {
 
 
   ReactDOM.render(
-      <ThemeProvider theme={customTheme}> 
+      <ThemeProvider theme={customTheme}>
         ...your app content
       </ThemeProvider>,
     document.getElementById('root'),
   );
+  `
+}
+
+export const DividerSnippets = {
+  variants: `
+  import { Divider } from 'react-neon-ui'
+
+  <Divider variant='primary'/>
+  <Divider variant='secondary'/>
   `
 }
