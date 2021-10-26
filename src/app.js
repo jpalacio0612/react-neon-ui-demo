@@ -14,6 +14,7 @@ import { NumberInputDemo } from './components/NumberInputDemo'
 import { SelectDemo } from './components/SelectDemo'
 import { AutocompleteDemo } from './components/AutocompleteDemo'
 import { Theming } from './components/Theming'
+import { TextAreaDemo } from './components/TextAreaDemo'
 import { useSelector } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
 
@@ -37,6 +38,7 @@ function App() {
               <Route exact path='/select' component={SelectDemo} />
               <Route exact path='/autocomplete' component={AutocompleteDemo} />
               <Route exact path='/theming' component={Theming} />
+              <Route exact path='/textarea' component={TextAreaDemo} />
               <Route />
             </Switch>
           </div>

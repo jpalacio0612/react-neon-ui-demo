@@ -10,7 +10,8 @@ const routes = [
   { url: '/textinput', name: 'TextInput' },
   { url: '/numberinput', name: 'NumberInput' },
   { url: '/autocomplete', name: 'Autocomplete' },
-  { url: '/theming', name: 'Theming' }
+  { url: '/theming', name: 'Theming' },
+  { url: '/textarea', name: 'TextArea' }
 ]
 export const Navbar = () => {
   const navbarRef = useRef(null)
